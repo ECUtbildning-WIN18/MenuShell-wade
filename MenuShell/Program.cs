@@ -1,4 +1,6 @@
 ﻿using System;
+using MenuShell.Domain.Services;
+using MenuShell.Views;
 
 namespace MenuShell
 {
@@ -6,7 +8,12 @@ namespace MenuShell
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ILoginView startLoginView = new LoginView("*** Login ***");
+
+            startLoginView.Display();
+
+            Console.ReadKey();
+
         }
     }
 }
