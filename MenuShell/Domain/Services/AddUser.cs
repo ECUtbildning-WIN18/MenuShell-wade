@@ -27,6 +27,7 @@ namespace MenuShell.Domain.Services
             root.Add(new XAttribute("username", username));
             root.Add(new XAttribute("password", password));
             root.Add(new XAttribute("role", role));
+
             doc.Element("Users").Add(root);
             doc.Save("Users.xml");
 

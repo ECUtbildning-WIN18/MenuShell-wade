@@ -7,5 +7,6 @@ namespace MenuShell.Domain.Services
     interface IUserLoader
     {
         List<User> LoadUsers();
+        //Dictionary<string, User> LoadUsers();
     }
 }

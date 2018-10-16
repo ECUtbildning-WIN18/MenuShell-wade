@@ -16,6 +16,7 @@ namespace MenuShell.Views
             Console.Clear();
             Console.WriteLine("1. Add user");
             Console.WriteLine("2. Delete user");
+            Console.WriteLine("3. List users");
             Console.Write("\n\n>");
 
             var key = Console.ReadKey();
@@ -32,6 +33,10 @@ namespace MenuShell.Views
                 case ConsoleKey.NumPad2:
                     var removeUser = new RemoveView("*** Remove User ***");
                     removeUser.RemoveDisplay();
+                    break;
+                case ConsoleKey.D3:
+                case ConsoleKey.NumPad3:
+                    // underprogress List users
                     break;
 
                 default:

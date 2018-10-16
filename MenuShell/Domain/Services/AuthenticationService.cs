@@ -20,6 +20,8 @@ namespace MenuShell.Domain.Services
             
             
             return users.FirstOrDefault(x => x.Username == username && x.Password == password);
+
+          //  return users.Values.FirstOrDefault(x => x.Username == username && x.Password == password);
         }
     }
 }

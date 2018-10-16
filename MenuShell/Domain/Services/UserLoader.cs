@@ -10,6 +10,8 @@ namespace MenuShell.Domain.Services
         {
             var users = new List<User>();
 
+            users.Add(new User("admin","secret", "Administrator"));
+
             var doc = XDocument.Load("Users.xml");
 
             var root = doc.Root;
@@ -30,6 +32,7 @@ namespace MenuShell.Domain.Services
       /*public Dictionary<string, User> LoadUsers()
         {
             var users = new Dictionary<string,User>();
+
             var doc = XDocument.Load("Users.xml");
             var root = doc.Root;
 
@@ -41,6 +44,7 @@ namespace MenuShell.Domain.Services
 
                 users.Add(role, new User(username, password, role));
             }
+            users.Add("Admin",(new User("Admin","secret","Ad")););
 
             return users;
         }*/
